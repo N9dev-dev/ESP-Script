@@ -6,6 +6,9 @@ local function API_Check()
     end
 end
 
+getgenv().ESP = {}
+local Environment = getgenv().ESP
+
 local Find_Required = API_Check()
 
 if Find_Required == "No" then
